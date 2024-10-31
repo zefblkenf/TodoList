@@ -56,11 +56,18 @@ trushBtn.addEventListener('click',(event) =>{
     todoList.removeChild(parent);
 })
 
+completeBtn.addEventListener('click',(event)=>{
+  
+    event.stopPropagation();
+    const parent =event.target.closest('li');
+    parent.querySelector('div').style.backgroundColor = "green";
+    parent.querySelector('div').innerHTML= parent.querySelector('div').innerHTML + " (done)";
+})
 
 
 
 //erase input
-todoInput.value="";
+todoInput.value= "";
     
 }
 
