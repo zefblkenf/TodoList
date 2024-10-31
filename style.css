@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(120deg,#00c6ff,#feb47b );
+    min-height: 120vh;
+    font-family: "Poppins";
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: bold;
+    min-height: 15vh;
+    
+}
+    
+h1,form{
+    display: flex;
+    justify-content: center;/*X*/
+    align-items: center;/*Y*/
+    color: #fff;
+}
+
+form input ,form button{
+    border: none;
+    padding: 0.4rem;
+    background-color: #fff;
+    font-size: 1.5rem;
+}
+
+form button {
+    background-color: #feb47b;
+    color: #fff;
+    cursor:pointer;
+    transition: all 0.4s ease;
+}
+
+form button:hover{
+    background: #00c6ff;
+}
+.task{
+    display: flex;
+}
+
+
+
+
+
+
+
+.complete-btn , .trush-btn 
+{
+    background-color:darkred;
+    color:#fff;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    
+}
+
+.complete-btn{
+    background-color:forestgreen ;
+    
+}
+
+.todo-input ,.todo-button{
+    margin: 0;
+}
+
+
+
+/* Remove margin, add consistent height, and customize border-radius */
+.todo-input, .todo-button {
+    margin: 0;
+    height: 40px; /* Adjust height as needed */
+    border-radius: 0; /* No rounding on the shared edge */
+}
+
+.todo-input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.todo-button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none; /* Remove border between input and button */
+}
+
+li{
+    display: flex;
+    margin: 12px;
+
+}
+.todo-item{
+    background-color: #fff;
+    width: 200px;
+    
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+
+
